@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | TicketPro</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <h1 class="logo">🎟️ TicketPro</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="tickets.html">Manage Tickets</a>
+      <button id="logoutBtn" class="btn">Logout</button>
+    </nav>
+  </header>
+
+  <main class="dashboard">
+    <section class="welcome">
+      <h2 id="welcomeUser">Welcome back 👋</h2>
+      <p>Here’s an overview of your ticket activity</p>
+    </section>
+
+    <section class="stats">
+      <div class="stat-box total">
+        <h3>Total Tickets</h3>
+        <p id="totalTickets">0</p>
+      </div>
+
+      <div class="stat-box open">
+        <h3>Open Tickets</h3>
+        <p id="openTickets">0</p>
+      </div>
+
+      <div class="stat-box resolved">
+        <h3>Resolved Tickets</h3>
+        <p id="closedTickets">0</p>
+      </div>
+    </section>
+
+    <div class="actions">
+      <a href="tickets.html" class="btn primary">Go to Ticket Management</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Tasket. All rights reserved.</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

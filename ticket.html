@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ticket Management | Tasket</title>
+  <link rel="stylesheet" href="ticket.css" />
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">🎟️Tasket </h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <button id="logoutBtn" class="btn">Logout</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="form-section">
+      <h2>Create New Ticket</h2>
+      <form id="ticketForm">
+        <input type="text" id="title" placeholder="Ticket Title" required />
+        <textarea id="description" placeholder="Describe the issue..." required></textarea>
+        <select id="priority" required>
+          <option value="">Select Priority</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <button type="submit" class="btn primary">Add Ticket</button>
+      </form>
+    </section>
+
+    <!-- 🔍 Search and Filters -->
+    <section class="filter-bar">
+      <input type="text" id="searchInput" placeholder="Search tickets..." />
+      <select id="statusFilter">
+        <option value="">All Status</option>
+        <option value="open">Open</option>
+        <option value="in_progress">In Progress</option>
+        <option value="closed">Closed</option>
+      </select>
+      <select id="priorityFilter">
+        <option value="">All Priority</option>
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+      </select>
+    </section>
+
+    <section class="tickets-list">
+      <h2>All Tickets</h2>
+      <div id="ticketsContainer"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tasket. All rights reserved.</p>
+  </footer>
+
+  <script src="ticket.js"></script>
+</body>
+</html>
